@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-1">
+            <div *ngFor="let meal of meals">
+                <div class="card-group shadow my-5 border-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-responsive" src="assets/static/{{ meal.image_url }}" width="400"
+                                height="500">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>{{ meal.restaurant }}</h3>
+                            <p class="lead">{{ meal.review }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Quality: {{ meal.quality }}</p>
+                            <p>Value: {{ meal.value }}</p>
+                            <p>Health: {{ meal.health }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

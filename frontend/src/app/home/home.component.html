@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center display-1" style="margin-top: 25px;">Hungry?</h1>
+            <h4 class="text-center">Check out our most recent meal!</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 offset-1">
+            <div class="card-group shadow my-5 border-0">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="img-responsive" src="assets/static/{{ lastMeal?.image_url }}"
+                            alt="oops! image not found" width="400" height="500">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{ lastMeal?.restaurant }}</h3>
+                        <p class="lead">{{ lastMeal?.review }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Quality: {{ lastMeal?.quality }}</p>
+                        <p>Value: {{ lastMeal?.value }}</p>
+                        <p>Health: {{ lastMeal?.health }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

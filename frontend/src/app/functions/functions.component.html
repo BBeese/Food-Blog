@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Try something new?</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="restaurant">Restaurant</label>
+                            <input type="text" class="form-control" id="restaurant" [(ngModel)]="restaurant" name="restaurant">
+                        </div>
+                        <div class="form-group">
+                            <label for="review">Review</label>
+                            <input type="text" class="form-control" id="review" [(ngModel)]="review" name="review">
+                        </div>
+                        <div class="form-group">
+                            <label for="quality">Quality</label>
+                            <input type="text" class="form-control" id="quality" [(ngModel)]="quality" name="quality">
+                        </div>
+                        <div class="form-group">
+                            <label for="value">Value</label>
+                            <input type="text" class="form-control" id="value" [(ngModel)]="value" name="value">
+                        </div>
+                        <div class="form-group">
+                            <label for="health">Health</label>
+                            <input type="text" class="form-control" id="health" [(ngModel)]="health" name="health">
+                        </div>
+                        <div class="form-group">
+                            <label for="imageUrl">Image Url</label>
+                            <input type="text" class="form-control" id="imageUrl" [(ngModel)]="imageUrl" name="imageUrl">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-outline-success" (click)="addMeal()">Add Meal</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3> Change your mind? </h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="idUpd8">ID</label>
+                            <input type="text" class="form-control" id="idUpd8" [(ngModel)]="idUpd8" name="idUpd8">
+                        </div>
+                        <div class="form-group">
+                            <label for="restaurantUpd8">Restaurant</label>
+                            <input type="text" class="form-control" id="restaurantUpd8" [(ngModel)]="restaurantUpd8" name="restaurantUpd8">
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewUpd8">Review</label>
+                            <input type="text" class="form-control" id="reviewUpd8" [(ngModel)]="reviewUpd8" name="reviewUpd8">
+                        </div>
+                        <div class="form-group">
+                            <label for="qualityUpd8">Quality</label>
+                            <input type="text" class="form-control" id="qualityUpd8" [(ngModel)]="qualityUpd8" name="qualityUpd8">
+                        </div>
+                        <div class="form-group">
+                            <label for="valueUpd8">Value</label>
+                            <input type="text" class="form-control" id="valueUpd8" [(ngModel)]="valueUpd8" name="valueUpd8">
+                        </div>
+                        <div class="form-group">
+                            <label for="healthUpd8">Health</label>
+                            <input type="text" class="form-control" id="healthUpd8" [(ngModel)]="healthUpd8" name="healthUpd8">
+                        </div>
+                        <div class="form-group">
+                            <label for="imageUrlUpd8">Image Url</label>
+                            <input type="text" class="form-control" id="imageUrlUpd8" [(ngModel)]="imageUrlUpd8" name="imageUrlUpd8">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-outline-warning" (click)="updateMeal()">Update Meal</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3> Bad Idea? </h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="idDelete">ID</label>
+                            <input type="text" class="form-control" id="idDelete" [(ngModel)]="idDelete" name="idDelete">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-outline-danger" (click)="deleteMeal()">Delete Meal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

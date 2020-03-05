@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between py-md-3 shadow">
+  <a [routerLink]="['home']" class="navbar-brand">
+    <img src="assets/static/Logo.jpg" width="35" height="35" alt="">
+    Campus Chow
+  </a>
+  <div class="collapse navbar-collapse navbar-nav">
+    <a class="nav-item nav-link" [routerLink]="['about']">About</a>
+    <a class="nav-item nav-link" [routerLink]="['home']">Home</a>
+    <a class="nav-item nav-link" [routerLink]="['archive']">Archive</a>
+    <a class="nav-item nav-link" [routerLink]="['functions']">Functions</a>
+  </div>
+  <form class="form-inline">
+    <input type="email" class="form-control" placeholder="Join our mailing list!">
+    <button class="btn btn-outline-danger" type="submit"> Join </button>
+  </form>
+</nav>
+
+<router-outlet></router-outlet>
